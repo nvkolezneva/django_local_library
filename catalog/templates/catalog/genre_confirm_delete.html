@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Удалить жанр: {{ genre }}</h1>
+
+<p>Вы уверены, что хотите удалить этот жанр?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" action="" value="Да, удалить.">
+</form>
+
+{% endblock %}
